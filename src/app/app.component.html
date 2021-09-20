@@ -24,7 +24,7 @@
         Add Item!
       </button>
       <hr>
-      <ul class="list-group">
+      <!-- <ul class="list-group">
         <li
           class="list-group-item"
           (click)="onDelete(item)"
@@ -34,7 +34,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
   <hr>
   <div class="row">
     <div class="col-xs-12">
@@ -42,6 +42,7 @@
         <li
           class="list-group-item"
           (click)="onDelete(item)"
+          [@list1]
           *ngFor="let item of list"
         >
           {{ item }}
